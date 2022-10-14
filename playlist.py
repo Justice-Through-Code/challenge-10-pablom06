@@ -3,6 +3,7 @@
 # All of your functions should be in the other script (playlist_helpers.py)
 # But, you'll run your functions here
 # NOTE: Since there is no user input in this assignment, feel free to leave your function calls uncommented when you turn it in!
+import numpy as np 
 
 # 1.0 TODO: Import all of the functions in playlist_helpers.py into this file
 from operator import add
@@ -23,8 +24,8 @@ display_playlist(my_playlist)
 # 'title' (string)
 # NOTE: Your songs can be whatever you want! The tests will check your FUNCTIONS with their own
 # input, not your print statements (:
-Jackson={'artist': 'Michael Jackson', 'title': 'Beat It'}
-add_song(my_playlist,Jackson)
+MJ={'artist': 'Michael Jackson', 'title': 'Beat It'}
+add_song(my_playlist,MJ)
 '''
 example_song = {'artist': 'Lauryn Hill', 'title': 'Everything Is Everything'}
 '''
@@ -35,16 +36,16 @@ display_playlist(my_playlist)
 
 
 # 5.1 TODO: Add 2 more songs to my_playlist (using the add_song function)
-Good={'artist': 'David Crowder', 'title': 'Good God Almighty'}
+God={'artist': 'David Crowder', 'title': 'Good God Almighty'}
 Different={'artist': 'Micah Tyler', 'title': 'Different'}
-add_song(my_playlist,Good)
+add_song(my_playlist,God)
 add_song(my_playlist,Different)
 
 # 5.2 TODO: Then display it again using the display_playlist() function
 display_playlist(my_playlist)
 
 # 6.1 TODO: In playlist_helpers.py, define a function called get_playlist_length()
-# See playlist_helpers.py for details on how to define this function
+# See playlist_helpers.py for details on how to define this functions
 
 
 # 6.2 TODO: Call the get_playlist_length function you just created in THIS script
@@ -52,7 +53,6 @@ display_playlist(my_playlist)
 print(get_playlist_length(my_playlist))
 
 # 7.0 TODO: At the top of this script, import numpy using the usual alias
-import numpy as np 
 
 # Using numpy, calculate the average monthly plays for a song--
 # 8.0 TODO: using the mean() function from numpy, calculate and print the average of monthly_plays
